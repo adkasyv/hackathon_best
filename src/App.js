@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      All pages
+      All pages test adil brach
       <Footer />
     </div>
   );
