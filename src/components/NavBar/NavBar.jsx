@@ -8,6 +8,22 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
+import { Link } from "react-router-dom";
+
+const pages = [
+  {
+    type: "countries",
+    path: "/countries",
+  },
+  {
+    type: "Admin",
+    path: "/admin",
+  },
+  {
+    type: "Tickets",
+    path: "/tickets",
+  },
+];
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -56,32 +72,33 @@ export default function NavBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
+          <img
+            src="https://www.eschweilerjumping.com/wp-content/uploads/2017/09/travel-guide-icon-map-ticket-travel-icon-17.png"
+            alt="error:("
+            className="nav-logo"
+          />
+          <Link to="/countries" className="nav-link">
+            Countries
+          </Link>
+
+          <Link to="/admin" className="nav-link">
+            Admin
+          </Link>
+          <Link to="/tickets" className="nav-link">
+            Tickets
+          </Link>
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
-            hackathon_best
-          </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
+          ></Typography>
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+          ></Typography>
         </Toolbar>
       </AppBar>
     </Box>
