@@ -6,22 +6,6 @@
       "continent": "Europe",
       "population": 4000,
       "picture": "https://www.anta.travel/ClientData/PackageData/Images/PackageImage_2_202201071710350670.jpg",
-      "id": 1
-    },
-    {
-      "name": "Spain",
-      "capital": "Madrid",
-      "continent": "Europe",
-      "population": 4000,
-      "picture": "https://www.anta.travel/ClientData/PackageData/Images/PackageImage_2_202201071710350670.jpg",
-      "id": 2
-    },
-    {
-      "name": "Spain",
-      "capital": "Madrid",
-      "continent": "Europe",
-      "population": 4000,
-      "picture": "https://www.anta.travel/ClientData/PackageData/Images/PackageImage_2_202201071710350670.jpg",
       "id": 3
     },
     {
@@ -55,14 +39,6 @@
       "population": 4000,
       "picture": "https://www.anta.travel/ClientData/PackageData/Images/PackageImage_2_202201071710350670.jpg",
       "id": 7
-    },
-    {
-      "name": "Spain",
-      "capital": "Madrid",
-      "continent": "Europe",
-      "population": 4000,
-      "picture": "https://www.anta.travel/ClientData/PackageData/Images/PackageImage_2_202201071710350670.jpg",
-      "id": 1
     },
     {
       "name": "Spain",

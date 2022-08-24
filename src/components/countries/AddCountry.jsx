@@ -4,6 +4,7 @@ import { useCountries } from "../../contexts/CountryContextProvider";
 
 const AddCountry = () => {
   const { addCountry } = useCountries();
+  console.log("Add Country");
 
   const navigate = useNavigate();
 
