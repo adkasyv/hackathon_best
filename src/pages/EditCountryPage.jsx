@@ -1,7 +1,12 @@
 import React from "react";
+import EditCountry from "../components/countries/EditCountry";
 
 const EditCountryPage = () => {
-  return <div>EditCountryPage</div>;
+  return (
+    <div>
+      <EditCountry />
+    </div>
+  );
 };
 
 export default EditCountryPage;

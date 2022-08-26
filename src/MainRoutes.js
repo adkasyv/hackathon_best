@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import AdminPage from "./pages/AdminPage";
 import CountriesPage from "./pages/CountriesPage";
-import CountryDetailsPage from "./pages/CountryDeatils";
+import CountryDetailsPage from "./pages/CountryDetailsPage";
 import EditCountryPage from "./pages/EditCountryPage";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
@@ -64,6 +64,8 @@ const MainRoutes = () => {
       <Route path="/countries" element={<CountriesPage />} />
       <Route path="/admin" element={<AdminPage />} />
       <Route path="/tickets" element={<TicketsPage />} />
+      <Route path="/details/:id" element={<CountryDetailsPage />} />
+      <Route path="/edit/:id" element={<EditCountryPage />} />
     </Routes>
   );
 };
