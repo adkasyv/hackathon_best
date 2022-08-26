@@ -5,7 +5,6 @@ import { useCountries } from "../../contexts/CountryContextProvider";
 const CountryCard = ({ item }) => {
   const { deleteCountry } = useCountries();
   const navigate = useNavigate();
-  console.log("test");
 
   return (
     <div>
@@ -22,7 +21,7 @@ const CountryCard = ({ item }) => {
           </button>
           <button onClick={() => navigate(`/edit/${item.id}`)}>Edit</button>
           <button onClick={() => deleteCountry(item.id)}>Delete</button>
-          <button>Cart</button>
+          <button>Book</button>
         </div>
       </div>
     </div>

@@ -68,7 +68,7 @@ const CountryContextProvider = ({ children }) => {
 
   const values = {
     countries: state.countries,
-    countryDeatils: state.countryDetails,
+    countryDetails: state.countryDetails,
     getCountries,
     addCountry,
     getCountryDetails,
