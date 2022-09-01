@@ -27,6 +27,7 @@ const CountryContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
   const navigate = useNavigate();
+
   const location = useLocation();
 
   // add country
@@ -66,6 +67,19 @@ const CountryContextProvider = ({ children }) => {
     getCountries();
   };
 
+  const fetchByParams = (query, value) => {
+    const search = new URLSearchParams(location.search);
+    if (value === "all") {
+      search.delete(query);
+    } else {
+      search.set(query, value);
+    }
+    console.log(search.toString(), "search");
+    const url = `${location.pathname}?${search.toString()}`;
+    console.log(url, "url");
+    navigate(url);
+  };
+
   const values = {
     countries: state.countries,
     countryDeatils: state.countryDetails,
@@ -74,6 +88,7 @@ const CountryContextProvider = ({ children }) => {
     getCountryDetails,
     saveEditedCountry,
     deleteCountry,
+    fetchByParams,
   };
 
   return (

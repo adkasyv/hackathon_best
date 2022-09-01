@@ -5,7 +5,6 @@ import { useCountries } from "../../contexts/CountryContextProvider";
 const CountryCard = ({ item }) => {
   const { deleteCountry } = useCountries();
   const navigate = useNavigate();
-  console.log("test");
 
   return (
     <div>
